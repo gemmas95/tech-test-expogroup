@@ -15,4 +15,4 @@ To test the app use the next script:
 $ npm test
 ```
 
-> I don't apply flux in order not to do overengineering and have more time to focus on the other exercises.
+> I don't implement flux in order not to do overengineering and have more time to focus on the other exercises and testing.
