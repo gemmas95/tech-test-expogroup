@@ -1,29 +1,19 @@
+/* eslint-disable no-restricted-syntax */
+/* eslint-disable guard-for-in */
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-console */
 /* eslint-disable no-debugger */
 /* eslint-disable no-plusplus */
 
-// NOT WORKING WELL, second example not passing
-
 function averagePair(array, number) {
-  const averages = [];
+  const averagesArray = [];
   for (let i = 0; i + 1 < array.length; i++) {
-    averages[i] = (array[i] + array[i + 1]) / 2;
+    for (let j = i + 1; j < array.length; j++) {
+      averagesArray.push((array[i] + array[j]) / 2);
+    }
   }
-  console.log(averages);
-  return console.log(averages.some((element) => element === number));
+  console.log(averagesArray);
+  return console.log(averagesArray.some((element) => element === number));
 }
-averagePair([1, 3, 3, 5, 6, 7, 10, 12, 19], 8);
 
-/* function averagePair(array, number) {
-  let averages;
-  const arrayAverages = array.reduce((accum, currVal) => {
-    averages = [currVal + accum / 2, averages];
-    console.log(averages);
-    return averages;
-  });
-  console.log(arrayAverages);
-  return arrayAverages.some((element) => number === element);
-}
-averagePair([1, 2, 3], 2.5);
- */
+averagePair([1, 3, 3, 5, 6, 7, 10, 12, 19], 8);
