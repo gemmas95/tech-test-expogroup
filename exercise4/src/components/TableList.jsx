@@ -25,11 +25,16 @@ function TableList({ contributorsList }) {
         ></img>
       )}
       {contributorsList?.length > 0 && contributorsList[0].login && (
-        <ul className="card-deck flex-wrap cards__container">
-          {contributorsList?.map((user) => (
-            <Contributor user={user} key={user.id} />
-          ))}
-        </ul>
+        <>
+          <p className="text-center mt-4">
+            This repository has {contributorsList.length} contributor/s!
+          </p>
+          <ul className="card-deck flex-wrap cards__container">
+            {contributorsList?.map((user) => (
+              <Contributor user={user} key={user.id} />
+            ))}
+          </ul>
+        </>
       )}
       {contributorsList?.message && (
         <p className="text-center m-5 alert alert-danger">
