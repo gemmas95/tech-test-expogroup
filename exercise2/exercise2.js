@@ -22,4 +22,4 @@ function maxSubarraySum(array, number) {
   }
 }
 
-console.log("RESULT___", maxSubarraySum([], 2));
+// maxSubarraySum([], 2)
