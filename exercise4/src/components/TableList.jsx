@@ -24,7 +24,9 @@ function TableList({ contributorsList }) {
         </ul>
       )}
       {contributorsList?.message && (
-        <p className="text-center m-5">Error: {contributorsList.message}</p>
+        <p className="text-center m-5 alert alert-danger">
+          Error: {contributorsList.message}
+        </p>
       )}
     </>
   );
