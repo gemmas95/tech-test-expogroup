@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable no-debugger */
 /* eslint-disable no-console */
 /* eslint-disable no-plusplus */
@@ -22,4 +23,4 @@ function maxSubarraySum(array, number) {
   return arraySum;
 }
 
-maxSubarraySum([1, 2, 3], 2);
+// maxSubarraySum([1, 2, 3], 2)
