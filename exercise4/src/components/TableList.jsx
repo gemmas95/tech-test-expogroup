@@ -5,10 +5,10 @@ function TableList({ contributorsList }) {
   return (
     <>
       {!contributorsList && (
-        <>
-          <p className="text-center m-5">
+        <section>
+          <p className="text-center m-5" data-testid="nullContributorsText">
             Please enter a repository name and his owner name to find it's
-            contributors{" "}
+            contributors
           </p>
           <p className="text-center m-5">
             <span>
@@ -16,17 +16,18 @@ function TableList({ contributorsList }) {
               SkylabCoders
             </span>
           </p>
-        </>
+        </section>
       )}
       {contributorsList?.length === 0 && (
         <img
           alt="loading"
+          data-testid="isLoading"
           src="https://trello-attachments.s3.amazonaws.com/5f7c8ab9b80a927f1f047d20/300x300/a35a54d93989cc51ca3226d2220477b3/Gif_loaging.gif"
         ></img>
       )}
       {contributorsList?.length > 0 && contributorsList[0].login && (
         <>
-          <p className="text-center mt-4">
+          <p className="text-center mt-4" data-testid="contributorsLength">
             This repository has {contributorsList.length} contributor/s!
           </p>
           <ul className="card-deck flex-wrap cards__container">
@@ -37,7 +38,7 @@ function TableList({ contributorsList }) {
         </>
       )}
       {contributorsList?.message && (
-        <p className="text-center m-5 alert alert-danger">
+        <p data-testid="error" className="text-center m-5 alert alert-danger">
           Error: {contributorsList.message}
         </p>
       )}

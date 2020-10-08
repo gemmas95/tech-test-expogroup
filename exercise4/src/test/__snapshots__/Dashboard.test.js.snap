@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Dashboard should mathch Dashboard Component 1`] = `
+exports[`Dashboard should match Dashboard Component 1`] = `
 <div
   className="container-fluid"
 >
@@ -43,18 +43,20 @@ exports[`Dashboard should mathch Dashboard Component 1`] = `
       View contributors!
     </button>
   </form>
-  <p
-    className="text-center m-5"
-  >
-    Please enter a repository name and his owner name to find it's contributors
-     
-  </p>
-  <p
-    className="text-center m-5"
-  >
-    <span>
-      Suggestions: skylab-bootcamp-202007 repository owned by SkylabCoders
-    </span>
-  </p>
+  <section>
+    <p
+      className="text-center m-5"
+      data-testid="nullContributorsText"
+    >
+      Please enter a repository name and his owner name to find it's contributors
+    </p>
+    <p
+      className="text-center m-5"
+    >
+      <span>
+        Suggestions: skylab-bootcamp-202007 repository owned by SkylabCoders
+      </span>
+    </p>
+  </section>
 </div>
 `;
