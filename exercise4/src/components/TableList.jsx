@@ -5,7 +5,7 @@ function TableList({ contributorsList }) {
   return (
     <>
       {!contributorsList && (
-        <p>
+        <p className="text-center m-5">
           Please enter a repository name owned by SkylabCoders to find it's
           contributors <span>(suggestions: skylab-bootcamp-202007)</span>
         </p>
@@ -17,13 +17,15 @@ function TableList({ contributorsList }) {
         ></img>
       )}
       {contributorsList?.length > 0 && contributorsList[0].login && (
-        <ul>
+        <ul className="card-deck flex-wrap cards__container">
           {contributorsList?.map((user) => (
             <Contributor user={user} key={user.id} />
           ))}
         </ul>
       )}
-      {contributorsList?.message && <p>Error: {contributorsList.message}</p>}
+      {contributorsList?.message && (
+        <p className="text-center m-5">Error: {contributorsList.message}</p>
+      )}
     </>
   );
 }
