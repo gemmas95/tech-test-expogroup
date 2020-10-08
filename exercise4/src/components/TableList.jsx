@@ -5,7 +5,7 @@ function TableList({ contributorsList }) {
   return (
     <>
       {!contributorsList && (
-        <section>
+        <>
           <p className="text-center m-5" data-testid="nullContributorsText">
             Please enter a repository name and his owner name to find it's
             contributors
@@ -16,7 +16,7 @@ function TableList({ contributorsList }) {
               SkylabCoders
             </span>
           </p>
-        </section>
+        </>
       )}
       {contributorsList?.length === 0 && (
         <img
@@ -26,7 +26,7 @@ function TableList({ contributorsList }) {
         ></img>
       )}
       {contributorsList?.length > 0 && contributorsList[0].login && (
-        <>
+        <section>
           <p className="text-center mt-4" data-testid="contributorsLength">
             This repository has {contributorsList.length} contributor/s!
           </p>
@@ -35,7 +35,7 @@ function TableList({ contributorsList }) {
               <Contributor user={user} key={user.id} />
             ))}
           </ul>
-        </>
+        </section>
       )}
       {contributorsList?.message && (
         <p data-testid="error" className="text-center m-5 alert alert-danger">

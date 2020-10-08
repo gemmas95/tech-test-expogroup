@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import TableList from "./TableList";
 import { loadContributors } from "./../logic/contributorsActions";
 import SearchForm from "./SearchForm";
-import "./Dashboard.css";
+import "./Dashboard.scss";
 
 function Dashboard() {
   const [contributorsList, setContributorsList] = useState(null);

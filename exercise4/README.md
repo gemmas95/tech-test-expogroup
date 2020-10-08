@@ -1,5 +1,7 @@
 # Technical test exercice 4
 
+This is a responsive app that call the GitHub api and return a list of a contributors of a given repository.
+
 ## Setup
 
 To run this project use the next scripts:
@@ -9,7 +11,7 @@ $ npm install
 $ npm start
 ```
 
-To test the app use the next script:
+To run the tests use:
 
 ```
 $ npm test

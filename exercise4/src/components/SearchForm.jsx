@@ -6,8 +6,7 @@ function SearchForm(props) {
       onSubmit={props.onSubmit}
       data-testid="form"
       className="d-flex justify-content-center col-md-4 offset-md-4 flex-column text-center"
-      /*       autoComplete="off"
-       */
+      autoComplete="off"
     >
       <label>Repository Name</label>
       <input
