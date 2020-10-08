@@ -17,9 +17,11 @@ function maxSubarraySum(array, number) {
       arrayResults.push(result);
       result = 0;
     }
-    console.log(arrayResults);
+    // console.log(arrayResults);
     return arrayResults.sort((a, b) => b - a)[0];
   }
 }
 
 // maxSubarraySum([], 2)
+
+module.exports = maxSubarraySum;

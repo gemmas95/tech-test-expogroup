@@ -12,8 +12,10 @@ function averagePair(array, number) {
       averagesArray.push((array[i] + array[j]) / 2);
     }
   }
-  console.log(averagesArray);
-  return console.log(averagesArray.some((element) => element === number));
+  // console.log(averagesArray);
+  return averagesArray.some((element) => element === number);
 }
 
-averagePair([1, 3, 3, 5, 6, 7, 10, 12, 19], 8);
+// averagePair([1, 3, 3, 5, 6, 7, 10, 12, 19], 8);
+
+module.exports = averagePair;

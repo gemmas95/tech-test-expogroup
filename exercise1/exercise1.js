@@ -1,3 +1,4 @@
+/* eslint-disable import/prefer-default-export */
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-restricted-syntax */
 /* eslint-disable prefer-const */
@@ -28,3 +29,5 @@ function highestOccurrence(array) {
   return highOccurVal;
 }
 // highestOccurrence(["a", "a", 2, 2, 2, "a", 4])
+
+module.exports = highestOccurrence;
