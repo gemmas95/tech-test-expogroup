@@ -6,7 +6,7 @@ const { describe } = require("mocha");
 
 const highestOccurrence = require("./exercise1");
 
-describe("Exercise1", () => {
+describe("Exercise 1 - Highest Occurrence", () => {
   afterEach(() => {
     sinon.restore();
   });
