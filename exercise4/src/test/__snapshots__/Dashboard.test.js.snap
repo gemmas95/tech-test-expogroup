@@ -10,6 +10,7 @@ exports[`Dashboard should match Dashboard Component 1`] = `
     Contributors List
   </h1>
   <form
+    autoComplete="off"
     className="d-flex justify-content-center col-md-4 offset-md-4 flex-column text-center"
     data-testid="form"
     onSubmit={[Function]}
@@ -43,20 +44,18 @@ exports[`Dashboard should match Dashboard Component 1`] = `
       View contributors!
     </button>
   </form>
-  <section>
-    <p
-      className="text-center m-5"
-      data-testid="nullContributorsText"
-    >
-      Please enter a repository name and his owner name to find it's contributors
-    </p>
-    <p
-      className="text-center m-5"
-    >
-      <span>
-        Suggestions: skylab-bootcamp-202007 repository owned by SkylabCoders
-      </span>
-    </p>
-  </section>
+  <p
+    className="text-center m-5"
+    data-testid="nullContributorsText"
+  >
+    Please enter a repository name and his owner name to find it's contributors
+  </p>
+  <p
+    className="text-center m-5"
+  >
+    <span>
+      Suggestions: skylab-bootcamp-202007 repository owned by SkylabCoders
+    </span>
+  </p>
 </div>
 `;

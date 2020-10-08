@@ -2,6 +2,7 @@
 
 exports[`SearchForm should match snapshot 1`] = `
 <form
+  autoComplete="off"
   className="d-flex justify-content-center col-md-4 offset-md-4 flex-column text-center"
   data-testid="form"
 >
