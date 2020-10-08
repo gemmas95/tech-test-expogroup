@@ -16,8 +16,8 @@ function Dashboard() {
   }
 
   return (
-    <div className="mainContainer">
-      <h1>Contributors List</h1>
+    <div className="container-fluid">
+      <h1 className="jumbotron">Contributors List</h1>
       <SearchForm handleSubmit={handleSubmit} setRepoName={setRepoName} />
       <TableList contributorsList={contributorsList} error={error} />
     </div>

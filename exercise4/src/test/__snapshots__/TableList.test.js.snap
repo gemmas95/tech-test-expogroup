@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TableList should match 1`] = `
+<p
+  className="text-center m-5"
+>
+  Please enter a repository name owned by SkylabCoders to find it's contributors 
+  <span>
+    (suggestions: skylab-bootcamp-202007)
+  </span>
+</p>
+`;
+
+exports[`TableList should match 2`] = `
+<ul
+  className="card-deck flex-wrap cards__container"
+>
+  <li
+    className="profile-card"
+  >
+    <img
+      alt={24}
+      data-testid="avatar_url"
+      src="undefined"
+    />
+    <p
+      className="text-uppercase text-monospace font-weight-bold"
+      data-testid="user__login"
+    >
+      pepe
+    </p>
+    <p
+      data-testid="contributions"
+    >
+      Number of contributions: 
+    </p>
+    <a
+      className="btn btn-dark"
+      data-testid="html_url"
+    >
+       
+      Link to profile
+    </a>
+  </li>
+  <li
+    className="profile-card"
+  >
+    <img
+      alt={2}
+      data-testid="avatar_url"
+      src="undefined"
+    />
+    <p
+      className="text-uppercase text-monospace font-weight-bold"
+      data-testid="user__login"
+    >
+      lola
+    </p>
+    <p
+      data-testid="contributions"
+    >
+      Number of contributions: 
+    </p>
+    <a
+      className="btn btn-dark"
+      data-testid="html_url"
+    >
+       
+      Link to profile
+    </a>
+  </li>
+</ul>
+`;

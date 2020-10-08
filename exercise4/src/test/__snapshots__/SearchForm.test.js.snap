@@ -2,6 +2,7 @@
 
 exports[`SearchForm should match snapshot 1`] = `
 <form
+  className="d-flex justify-content-center"
   data-testid="form"
 >
   <input
@@ -9,6 +10,7 @@ exports[`SearchForm should match snapshot 1`] = `
     placeholder="Repository name"
   />
   <button
+    className="btn btn-info"
     data-testid="button"
     onClick={[Function]}
     type="submit"

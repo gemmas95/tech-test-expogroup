@@ -1,9 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`Contributor should match Contributor component 1`] = `
-<li
-  data-testid="user__login"
->
-  name
-</li>
-`;
