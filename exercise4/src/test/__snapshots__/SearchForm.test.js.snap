@@ -2,17 +2,32 @@
 
 exports[`SearchForm should match snapshot 1`] = `
 <form
-  className="d-flex justify-content-center"
+  autoComplete="off"
+  className="d-flex justify-content-center col-md-4 offset-md-4 flex-column text-center"
   data-testid="form"
 >
+  <label>
+    Repository Name
+  </label>
   <input
-    onChange={[Function]}
+    className="form-group"
+    name="repoName"
     placeholder="Repository name"
+    value="tour-of-heroes"
+  />
+  <label>
+    Owner
+  </label>
+  <input
+    className="form-group"
+    name="ownerName"
+    placeholder="Owner name"
+    type="text"
+    value="Bombasto"
   />
   <button
     className="btn btn-info"
     data-testid="button"
-    onClick={[Function]}
     type="submit"
   >
     View contributors!

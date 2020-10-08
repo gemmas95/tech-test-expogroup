@@ -2,7 +2,7 @@
 
 exports[`Contributor should match Contributor component 1`] = `
 <li
-  className="profile-card"
+  className="profile__card"
 >
   <img
     alt={14}

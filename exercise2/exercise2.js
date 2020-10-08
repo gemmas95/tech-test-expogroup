@@ -1,7 +1,4 @@
 /* eslint-disable no-else-return */
-/* eslint-disable no-unused-vars */
-/* eslint-disable no-debugger */
-/* eslint-disable no-console */
 /* eslint-disable no-plusplus */
 
 function maxSubarraySum(array, number) {
@@ -17,11 +14,8 @@ function maxSubarraySum(array, number) {
       arrayResults.push(result);
       result = 0;
     }
-    // console.log(arrayResults);
     return arrayResults.sort((a, b) => b - a)[0];
   }
 }
-
-// maxSubarraySum([], 2)
 
 module.exports = maxSubarraySum;

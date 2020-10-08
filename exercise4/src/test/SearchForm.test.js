@@ -8,7 +8,8 @@ import SearchForm from "../components/SearchForm";
 
 describe("SearchForm", () => {
   let container = null;
-  const searchFormTree = renderer.create(<SearchForm />);
+  let dataRepo = { repoName: "tour-of-heroes", ownerName: "Bombasto" };
+  const searchFormTree = renderer.create(<SearchForm dataRepo={dataRepo} />);
   beforeEach(() => {
     container = document.createElement("div");
     document.body.appendChild(container);
@@ -21,13 +22,17 @@ describe("SearchForm", () => {
   it("should match snapshot", () => {
     expect(searchFormTree).toMatchSnapshot();
   });
-  xit("should call onClick and go to handleSubmit", () => {
-    const repoName = "heroes";
+  it("should call onSubmit and go to handleSubmit", () => {
     const handleSubmit = jest.fn((event) => event.preventDefault());
+    const handleChange = jest.fn();
 
     act(() => {
       render(
-        <SearchForm handleSubmit={handleSubmit} setRepoName={repoName} />,
+        <SearchForm
+          dataRepo={dataRepo}
+          onChange={handleChange}
+          onSubmit={handleSubmit}
+        />,
         container
       );
       const submit = document.querySelector('[data-testid="form"]');

@@ -1,10 +1,10 @@
 import React from "react";
-import "./contributor.css";
+import "./Contributor.scss";
 
 // To render contributors change user.name for user.login change the commented loadContributors in logic/contributorsActions
 function Contributor({ user }) {
   return (
-    <li className="profile-card">
+    <li className="profile__card">
       <img
         src={`${user.avatar_url}`}
         alt={user.id}
