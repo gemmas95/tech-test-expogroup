@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchForm should match snapshot 1`] = `
+<form
+  data-testid="form"
+>
+  <input
+    onChange={[Function]}
+    placeholder="Repository name"
+  />
+  <button
+    data-testid="button"
+    onClick={[Function]}
+    type="submit"
+  >
+    View contributors!
+  </button>
+</form>
+`;
