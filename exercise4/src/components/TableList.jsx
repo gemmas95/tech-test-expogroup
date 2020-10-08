@@ -5,10 +5,18 @@ function TableList({ contributorsList }) {
   return (
     <>
       {!contributorsList && (
-        <p className="text-center m-5">
-          Please enter a repository name owned by SkylabCoders to find it's
-          contributors <span>(suggestions: skylab-bootcamp-202007)</span>
-        </p>
+        <>
+          <p className="text-center m-5">
+            Please enter a repository name and his owner name to find it's
+            contributors{" "}
+          </p>
+          <p className="text-center m-5">
+            <span>
+              Suggestions: skylab-bootcamp-202007 repository owned by
+              SkylabCoders
+            </span>
+          </p>
+        </>
       )}
       {contributorsList?.length === 0 && (
         <img

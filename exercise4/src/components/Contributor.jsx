@@ -1,5 +1,5 @@
 import React from "react";
-import "./contributor.css";
+import "./Contributor.css";
 
 // To render contributors change user.name for user.login change the commented loadContributors in logic/contributorsActions
 function Contributor({ user }) {
