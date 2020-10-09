@@ -17,4 +17,4 @@ To run the tests use:
 $ npm test
 ```
 
-> I don't implement flux in order not to do overengineering and have more time to focus on the other exercises and testing. But it would be a good implementation in a app with more complexity in order to have a unidirectional data flow.
+> I don't implement flux in order not to do overengineering and have more time to focus on the other exercises and testing. But it would be a good implementation in a app with more complexity to have a unidirectional data flow.
