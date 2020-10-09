@@ -10,7 +10,7 @@
   min-width: 300px;
 }
 
-.profile-card:hover {
+.profile__card:hover {
   box-shadow: 0 18px 26px 0 rgba(0, 0, 0, 0.2);
   background-color: #d6d8d6;
 }
@@ -19,7 +19,7 @@
   justify-content: center;
 }
 
-.profile-card > img {
+.profile__card > img {
   border-radius: 50%;
   width: 150px;
   background-color: white;
