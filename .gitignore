@@ -8,6 +8,9 @@
 # testing
 /coverage
 
+# calculate liniality
+/**/calculate.html
+
 # production
 /build
 
